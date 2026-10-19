@@ -13,9 +13,10 @@ ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = CoreGui
 if syn and syn.protect_gui then syn.protect_gui(ScreenGui) end
 
+-- شاشة القفل (عريضة وبالنص)
 local KeyFrame = Instance.new("Frame")
-KeyFrame.Size = UDim2.new(0, 380, 0, 240)
-KeyFrame.Position = UDim2.new(0.5, -190, 0.5, -120)
+KeyFrame.Size = UDim2.new(0, 600, 0, 250)
+KeyFrame.Position = UDim2.new(0.5, -300, 0.5, -125)
 KeyFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
 KeyFrame.BorderSizePixel = 0
 KeyFrame.Parent = ScreenGui
@@ -44,25 +45,25 @@ KeyFrameStroke.Transparency = 0.2
 
 local KeyTitle = Instance.new("TextLabel")
 KeyTitle.Size = UDim2.new(1, 0, 0, 30)
-KeyTitle.Position = UDim2.new(0, 0, 0, 25)
+KeyTitle.Position = UDim2.new(0, 0, 0, 30)
 KeyTitle.BackgroundTransparency = 1
 KeyTitle.Text = "حط المفتاح هنا"
 KeyTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 KeyTitle.Font = Enum.Font.GothamBold
-KeyTitle.TextSize = 20
+KeyTitle.TextSize = 22
 KeyTitle.ZIndex = 2
 KeyTitle.Parent = KeyFrame
 
 local KeyBox = Instance.new("TextBox")
-KeyBox.Size = UDim2.new(0.75, 0, 0, 45)
-KeyBox.Position = UDim2.new(0.125, 0, 0, 75)
+KeyBox.Size = UDim2.new(0.8, 0, 0, 50)
+KeyBox.Position = UDim2.new(0.1, 0, 0, 80)
 KeyBox.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
 KeyBox.PlaceholderText = "ادخل المفتاح..."
 KeyBox.PlaceholderColor3 = Color3.fromRGB(130, 130, 140)
 KeyBox.Text = ""
 KeyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 KeyBox.Font = Enum.Font.GothamBold
-KeyBox.TextSize = 16
+KeyBox.TextSize = 18
 KeyBox.ZIndex = 2
 KeyBox.Parent = KeyFrame
 Instance.new("UICorner", KeyBox).CornerRadius = UDim.new(0, 8)
@@ -71,13 +72,13 @@ BoxStroke.Color = Color3.fromRGB(60, 60, 70)
 BoxStroke.Thickness = 1
 
 local KeyBtn = Instance.new("TextButton")
-KeyBtn.Size = UDim2.new(0.75, 0, 0, 45)
-KeyBtn.Position = UDim2.new(0.125, 0, 0, 140)
+KeyBtn.Size = UDim2.new(0.4, 0, 0, 45)
+KeyBtn.Position = UDim2.new(0.3, 0, 0, 150)
 KeyBtn.BackgroundColor3 = Color3.fromRGB(35, 10, 10) 
 KeyBtn.Text = "دخول"
 KeyBtn.TextColor3 = Color3.fromRGB(220, 30, 30)
 KeyBtn.Font = Enum.Font.GothamBold
-KeyBtn.TextSize = 18
+KeyBtn.TextSize = 20
 KeyBtn.ZIndex = 2
 KeyBtn.Parent = KeyFrame
 Instance.new("UICorner", KeyBtn).CornerRadius = UDim.new(0, 8)
@@ -95,6 +96,7 @@ KeyBtn.MouseLeave:Connect(function()
     KeyBtnStroke.Color = Color3.fromRGB(180, 20, 20)
 end)
 
+-- الواجهة الرئيسية
 local MainBox = Instance.new("Frame")
 MainBox.Size = UDim2.new(0, 280, 0, 110)
 MainBox.Position = UDim2.new(0.5, -140, 0.5, -55)
