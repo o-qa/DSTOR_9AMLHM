@@ -1,12 +1,204 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local VirtualUser = game:GetService("VirtualUser")
 
-]]--
+if CoreGui:FindFirstChild("AntiAfkByAlf7lDstor") then
+    CoreGui["AntiAfkByAlf7lDstor"]:Destroy()
+end
 
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==81) then v19=v0(v3(v30,1,1));return "";else local v90=v2(v0(v30,16));if v19 then local v110=0;local v111;while true do if (v110==1) then return v111;end if (v110==0) then v111=v5(v90,v19);v19=nil;v110=1;end end else return v90;end end end);local function v20(v31,v32,v33) if v33 then local v91=(v31/((929 -(214 + 713))^(v32-(2 -1))))%((5 -3)^(((v33-(878 -(282 + 595))) -(v32-(1 -0))) + 1)) ;return v91-(v91%(2 -(4 -3))) ;else local v92=(621 -(555 + 64))^(v32-(932 -((974 -(32 + 85)) + 74))) ;return (((v31%(v92 + v92))>=v92) and (569 -(367 + 201))) or (1270 -(226 + 1044)) ;end end local function v21() local v34=0 + 0 ;local v35;while true do if (v34==0) then v35=v1(v16,v18,v18);v18=v18 + 1 ;v34=1 + 0 ;end if (v34==((2285 -1327) -(892 + 65))) then return v35;end end end local function v22() local v36,v37=v1(v16,v18,v18 + 2 );v18=v18 + (3 -1) ;return (v37 * (472 -216)) + v36 ;end local function v23() local v38,v39,v40,v41=v1(v16,v18,v18 + ((1135 -(802 + 150)) -(67 + (303 -190))) );v18=v18 + 3 + 1 ;return (v41 * (41190819 -24413603)) + (v40 * (48199 + 17337)) + (v39 * (1017 -761)) + v38 ;end local function v24() local v42=(0 -0) -0 ;local v43;local v44;local v45;local v46;local v47;local v48;while true do if (v42==2) then v47=v20(v44,16 + 1 + 4 ,1517 -(998 + 488) );v48=((v20(v44,1029 -(915 + 82) )==(1 + 0)) and  -(2 -1)) or (1 + 0) ;v42=12 -(8 + 1) ;end if (v42==(0 -0)) then v43=v23();v44=v23();v42=1188 -(1069 + (1173 -(87 + 968))) ;end if (v42==(6 -(13 -10))) then if (v47==(0 -0)) then if (v46==(0 + 0)) then return v48 * 0 ;else local v119=0 -(0 + 0) ;while true do if (v119==(0 + 0)) then v47=1 + 0 ;v45=(2000 -1115) -(261 + 624) ;break;end end end elseif (v47==(2838 -(368 + 423))) then return ((v46==(0 -0)) and (v48 * ((19 -(10 + 8))/0))) or (v48 * NaN) ;end return v8(v48,v47-(3934 -2911) ) * (v45 + (v46/((444 -(416 + 26))^(165 -(1526 -(447 + 966)))))) ;end if ((3 -2)==v42) then v45=1 + 0 ;v46=(v20(v44,1914 -(1789 + 124) ,20) * ((768 -(745 + 21))^(56 -24))) + v43 ;v42=440 -(145 + 293) ;end end end local function v25(v49) local v50;if  not v49 then v49=v23();if (v49==(0 -0)) then return "";end end v50=v3(v16,v18,(v18 + v49) -(1818 -(1703 + 114)) );v18=v18 + v49 ;local v51={};for v67=702 -(376 + 325) , #v50 do v51[v67]=v2(v1(v3(v50,v67,v67)));end return v6(v51);end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v52=(function() return function(v93,v94,v95,v96,v97,v98,v99,v100,v101) local v102=(function() return 0;end)();local v93=(function() return;end)();local v94=(function() return;end)();while true do if (0==v102) then local v116=(function() return 780 -(162 + 618) ;end)();while true do if ((0 + 0)==v116) then v93=(function() return 0 + 0 ;end)();v94=(function() return nil;end)();v116=(function() return 1 -0 ;end)();end if (v116~=1) then else v102=(function() return 1 -0 ;end)();break;end end end if ((1 + 0)==v102) then while true do if (v93==(1636 -(1373 + 263))) then v94=(function() return v95();end)();if (v96(v94, #"[", #"[")~=(1000 -(451 + 549))) then else local v122=(function() return 0 + 0 ;end)();local v123=(function() return;end)();local v124=(function() return;end)();local v125=(function() return;end)();local v126=(function() return;end)();while true do if (v122==2) then while true do if (v123~=2) then else local v167=(function() return 0 -0 ;end)();local v168=(function() return;end)();while true do if (v167~=(0 -0)) then else v168=(function() return 1384 -(746 + 638) ;end)();while true do if (v168==(0 + 0)) then if (v96(v125, #"{", #"/")== #"}") then v126[2]=(function() return v97[v126[2]];end)();end if (v96(v125,2,2)~= #">") then else v126[ #"91("]=(function() return v97[v126[ #"91("]];end)();end v168=(function() return 1;end)();end if (v168==1) then v123=(function() return  #"asd";end)();break;end end break;end end end if ( #"91("~=v123) then else if (v96(v125, #"-19", #"gha")== #",") then v126[ #"xnxx"]=(function() return v97[v126[ #".com"]];end)();end v98[v99]=(function() return v126;end)();break;end if (v123~= #"/") then else local v170=(function() return 0 -0 ;end)();while true do if (v170==1) then v123=(function() return 2;end)();break;end if ((341 -(218 + 123))==v170) then v126=(function() return {v100(),v100(),nil,nil};end)();if (v124==(0 + 0)) then local v179=(function() return 0 + 0 ;end)();local v180=(function() return;end)();while true do if (v179==0) then v180=(function() return 560 -(306 + 254) ;end)();while true do if (v180==0) then v126[ #"gha"]=(function() return v100();end)();v126[ #"http"]=(function() return v100();end)();break;end end break;end end elseif (v124== #"\\") then v126[ #"gha"]=(function() return v101();end)();elseif (v124==2) then v126[ #"91("]=(function() return v101() -(2^(1 + 15)) ;end)();elseif (v124~= #"-19") then else local v187=(function() return 0;end)();local v188=(function() return;end)();while true do if (v187==(0 -0)) then v188=(function() return 1467 -(899 + 568) ;end)();while true do if (v188~=0) then else v126[ #"gha"]=(function() return v101() -(2^(11 + 5)) ;end)();v126[ #"asd1"]=(function() return v100();end)();break;end end break;end end end v170=(function() return 1;end)();end end end if (v123~=(0 -0)) then else local v171=(function() return 0;end)();local v172=(function() return;end)();while true do if (v171==0) then v172=(function() return 603 -(268 + 335) ;end)();while true do if ((291 -(60 + 230))==v172) then v123=(function() return  #".";end)();break;end if (0~=v172) then else v124=(function() return v96(v94,574 -(426 + 146) , #"xnx");end)();v125=(function() return v96(v94, #".com",1 + 5 );end)();v172=(function() return 1;end)();end end break;end end end end break;end if (0~=v122) then else local v128=(function() return 0;end)();while true do if (1~=v128) then else v122=(function() return 1;end)();break;end if (0==v128) then v123=(function() return 0;end)();v124=(function() return nil;end)();v128=(function() return 1;end)();end end end if (v122==1) then local v129=(function() return 0;end)();while true do if (1~=v129) then else v122=(function() return 1458 -(282 + 1174) ;end)();break;end if (v129==(811 -(569 + 242))) then v125=(function() return nil;end)();v126=(function() return nil;end)();v129=(function() return 1;end)();end end end end end break;end end return v93,v94,v95,v96,v97,v98,v99,v100,v101;end end end;end)();local v53=(function() return function(v103,v104,v105) local v106=(function() return 0;end)();local v107=(function() return;end)();while true do if (v106~=(0 -0)) then else v107=(function() return 0;end)();while true do if (v107~=0) then else local v121=(function() return 0 + 0 ;end)();while true do if (v121==(1024 -(706 + 318))) then local v127=(function() return 1251 -(721 + 530) ;end)();while true do if (v127==0) then v103[v104-#">" ]=(function() return v105();end)();return v103,v104,v105;end end end end end end break;end end end;end)();local v54=(function() return {};end)();local v55=(function() return {};end)();local v56=(function() return {};end)();local v57=(function() return {v54,v55,nil,v56};end)();local v58=(function() return v23();end)();local v59=(function() return {};end)();for v69= #".",v58 do local v70=(function() return 0 -0 ;end)();local v71=(function() return;end)();local v72=(function() return;end)();local v73=(function() return;end)();while true do if (1==v70) then v73=(function() return nil;end)();while true do if (v71~=0) then else v72=(function() return v21();end)();v73=(function() return nil;end)();v71=(function() return 1;end)();end if (v71==1) then if (v72== #":") then v73=(function() return v21()~=(0 + 0) ;end)();elseif (v72==(702 -(271 + 429))) then v73=(function() return v24();end)();elseif (v72~= #"91(") then else v73=(function() return v25();end)();end v59[v69]=(function() return v73;end)();break;end end break;end if (v70==(0 + 0)) then v71=(function() return 0;end)();v72=(function() return nil;end)();v70=(function() return 1501 -(1408 + 92) ;end)();end end end v57[ #"nil"]=(function() return v21();end)();for v74= #"|",v23() do FlatIdent_8199B,Descriptor,v21,v20,v59,v54,v74,v22,v23=(function() return v52(FlatIdent_8199B,Descriptor,v21,v20,v59,v54,v74,v22,v23);end)();end for v75= #"|",v23() do v55,v75,v28=(function() return v53(v55,v75,v28);end)();end return v57;end local function v29(v61,v62,v63) local v64=v61[1087 -(461 + 625) ];local v65=v61[852 -(20 + (2805 -(1913 + 62))) ];local v66=v61[2 + 1 + 0 ];return function(...) local v76=v64;local v77=v65;local v78=v66;local v79=v27;local v80=1289 -(993 + 295) ;local v81= -(1 + 0);local v82={};local v83={...};local v84=v12("#",...) -(1172 -(418 + (1993 -1240))) ;local v85={};local v86={};for v108=0 + 0 ,v84 do if (v108>=v78) then v82[v108-v78 ]=v83[v108 + 1 + 0 ];else v86[v108]=v83[v108 + 1 + 0 ];end end local v87=(v84-v78) + 1 + 0 ;local v88;local v89;while true do local v109=529 -((2339 -(565 + 1368)) + 123) ;while true do if ((v109==(1770 -(1749 + 20))) or (33==1455)) then if ((v89<=7) or (443>=4015)) then if ((4853>=2982) and (v89<=(1 + 2))) then if ((4134>3357) and (v89<=(1323 -(1249 + (274 -201))))) then if (v89>(0 -0)) then v86[v88[1 + 1 ]]={};else local v131=v88[5 -3 ];local v132,v133=v79(v86[v131](v13(v86,v131 + (1146 -(466 + 679)) ,v88[6 -3 ])));v81=(v133 + v131) -((1665 -(1477 + 184)) -3) ;local v134=0;for v161=v131,v81 do v134=v134 + (2 -1) ;v86[v161]=v132[v134];end end elseif (v89>(1902 -(106 + (2444 -650)))) then do return;end else v86[v88[1 + 1 ]]=v63[v88[1 + 2 ]];end elseif ((3382>166) and ((v89<=(5 + 0)) or (3417<2534))) then if ((v89==(11 -7)) or (280==3059)) then v86[v88[5 -3 ]]=v88[2 + 1 ];else local v139=v88[116 -(4 + 110) ];local v140=v86[v88[6 -3 ]];v86[v139 + (2 -(1 + 0)) ]=v140;v86[v139]=v140[v88[588 -(57 + 527) ]];end elseif (v89>(13 -(863 -(564 + 292)))) then do return;end else v86[v88[1429 -(41 + 1386) ]]=v63[v88[106 -(17 + 86) ]];end elseif (v89<=(8 + 3)) then if (v89<=(19 -10)) then if (v89>(23 -15)) then v86[v88[168 -(122 + 44) ]]();else v86[v88[2]]();end elseif (v89==(17 -7)) then v86[v88[1331 -((1375 -578) + 532) ]]={};else local v147=0 + (0 -0) ;local v148;local v149;while true do if ((v147==(0 -0)) or (2722<=164)) then v148=v88[2 + 0 ];v149=v86[v88[1205 -(373 + 829) ]];v147=732 -(476 + 255) ;end if (v147==(1 + 0)) then v86[v148 + (1 -0) ]=v149;v86[v148]=v149[v88[69 -((334 -(244 + 60)) + 35) ]];break;end end end elseif ((1881>1293) and (v89<=(24 -11))) then if (v89>(9 + 3 + 0)) then local v150=v88[240 -(64 + 174) ];v86[v150]=v86[v150](v13(v86,v150 + (1258 -(1043 + 214)) ,v81));else local v152=v88[7 -5 ];local v153,v154=v79(v86[v152](v13(v86,v152 + (1213 -(323 + 889)) ,v88[339 -(144 + 192) ])));v81=(v154 + v152) -(217 -(42 + 174)) ;local v155=(476 -(41 + 435)) -0 ;for v164=v152,v81 do v155=v155 + (581 -(361 + (1220 -(938 + 63)))) ;v86[v164]=v153[v155];end end elseif ((v89==14) or (2408<2109)) then v86[v88[(248 + 74) -(53 + 267) ]]=v88[1 + 2 ];else local v158=v88[1506 -(363 + 1141) ];v86[v158]=v86[v158](v13(v86,v158 + (414 -(15 + 398)) ,v81));end v80=v80 + (983 -((1143 -(936 + 189)) + 964)) ;break;end if ((2357==2357) and ((0 + 0)==v109)) then v88=v76[v80];v89=v88[3 -2 ];v109=1 + 0 ;end end end end;end return v29(v28(),{},v17)(...);end return v15("LOL!043Q00030A3Q006C6F6164737472696E6703043Q0067616D6503073Q00482Q747047657403323Q00682Q7470733A2Q2F6769746875622E636F6D2F6F2D71612F4453544F525F39414D4C484D2F626C6F622F6D61696E2F6C756100094Q00017Q001202000100013Q001202000200023Q00200B000200020003001204000400046Q000200044Q000F00013Q00022Q00090001000100012Q00073Q00017Q00",v9(),...);
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "AntiAfkByAlf7lDstor"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = CoreGui
+if syn and syn.protect_gui then syn.protect_gui(ScreenGui) end
+
+local KeyFrame = Instance.new("Frame")
+KeyFrame.Size = UDim2.new(0, 380, 0, 240)
+KeyFrame.Position = UDim2.new(0.5, -190, 0.5, -120)
+KeyFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+KeyFrame.BorderSizePixel = 0
+KeyFrame.Parent = ScreenGui
+Instance.new("UICorner", KeyFrame).CornerRadius = UDim.new(0, 12)
+
+local KeyBg = Instance.new("ImageLabel")
+KeyBg.Size = UDim2.new(1, 0, 1, 0)
+KeyBg.BackgroundTransparency = 1
+KeyBg.Image = "rbxassetid://126064221792267"
+KeyBg.ScaleType = Enum.ScaleType.Stretch
+KeyBg.Parent = KeyFrame
+Instance.new("UICorner", KeyBg).CornerRadius = UDim.new(0, 12)
+
+local KeyOverlay = Instance.new("Frame")
+KeyOverlay.Size = UDim2.new(1, 0, 1, 0)
+KeyOverlay.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+KeyOverlay.BackgroundTransparency = 0.3
+KeyOverlay.BorderSizePixel = 0
+KeyOverlay.Parent = KeyFrame
+Instance.new("UICorner", KeyOverlay).CornerRadius = UDim.new(0, 12)
+
+local KeyFrameStroke = Instance.new("UIStroke", KeyFrame)
+KeyFrameStroke.Color = Color3.fromRGB(200, 20, 20)
+KeyFrameStroke.Thickness = 2
+KeyFrameStroke.Transparency = 0.2
+
+local KeyTitle = Instance.new("TextLabel")
+KeyTitle.Size = UDim2.new(1, 0, 0, 30)
+KeyTitle.Position = UDim2.new(0, 0, 0, 25)
+KeyTitle.BackgroundTransparency = 1
+KeyTitle.Text = "حط المفتاح هنا"
+KeyTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyTitle.Font = Enum.Font.GothamBold
+KeyTitle.TextSize = 20
+KeyTitle.ZIndex = 2
+KeyTitle.Parent = KeyFrame
+
+local KeyBox = Instance.new("TextBox")
+KeyBox.Size = UDim2.new(0.75, 0, 0, 45)
+KeyBox.Position = UDim2.new(0.125, 0, 0, 75)
+KeyBox.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+KeyBox.PlaceholderText = "ادخل المفتاح..."
+KeyBox.PlaceholderColor3 = Color3.fromRGB(130, 130, 140)
+KeyBox.Text = ""
+KeyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyBox.Font = Enum.Font.GothamBold
+KeyBox.TextSize = 16
+KeyBox.ZIndex = 2
+KeyBox.Parent = KeyFrame
+Instance.new("UICorner", KeyBox).CornerRadius = UDim.new(0, 8)
+local BoxStroke = Instance.new("UIStroke", KeyBox)
+BoxStroke.Color = Color3.fromRGB(60, 60, 70)
+BoxStroke.Thickness = 1
+
+local KeyBtn = Instance.new("TextButton")
+KeyBtn.Size = UDim2.new(0.75, 0, 0, 45)
+KeyBtn.Position = UDim2.new(0.125, 0, 0, 140)
+KeyBtn.BackgroundColor3 = Color3.fromRGB(35, 10, 10) 
+KeyBtn.Text = "دخول"
+KeyBtn.TextColor3 = Color3.fromRGB(220, 30, 30)
+KeyBtn.Font = Enum.Font.GothamBold
+KeyBtn.TextSize = 18
+KeyBtn.ZIndex = 2
+KeyBtn.Parent = KeyFrame
+Instance.new("UICorner", KeyBtn).CornerRadius = UDim.new(0, 8)
+
+local KeyBtnStroke = Instance.new("UIStroke", KeyBtn)
+KeyBtnStroke.Color = Color3.fromRGB(180, 20, 20)
+KeyBtnStroke.Thickness = 1.5
+
+KeyBtn.MouseEnter:Connect(function()
+    KeyBtn.BackgroundColor3 = Color3.fromRGB(50, 15, 15)
+    KeyBtnStroke.Color = Color3.fromRGB(255, 50, 50)
+end)
+KeyBtn.MouseLeave:Connect(function()
+    KeyBtn.BackgroundColor3 = Color3.fromRGB(35, 10, 10)
+    KeyBtnStroke.Color = Color3.fromRGB(180, 20, 20)
+end)
+
+local MainBox = Instance.new("Frame")
+MainBox.Size = UDim2.new(0, 280, 0, 110)
+MainBox.Position = UDim2.new(0.5, -140, 0.5, -55)
+MainBox.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+MainBox.BorderSizePixel = 0
+MainBox.Active = true
+MainBox.Draggable = true
+MainBox.Visible = false
+MainBox.Parent = ScreenGui
+Instance.new("UICorner", MainBox).CornerRadius = UDim.new(0, 12)
+
+local BgImage = Instance.new("ImageLabel")
+BgImage.Size = UDim2.new(1, 0, 1, 0)
+BgImage.BackgroundTransparency = 1
+BgImage.Image = "rbxassetid://134613712372019"
+BgImage.ScaleType = Enum.ScaleType.Crop
+BgImage.Parent = MainBox
+Instance.new("UICorner", BgImage).CornerRadius = UDim.new(0, 12)
+
+local Overlay = Instance.new("Frame")
+Overlay.Size = UDim2.new(1, 0, 1, 0)
+Overlay.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Overlay.BackgroundTransparency = 0.45
+Overlay.BorderSizePixel = 0
+Overlay.Parent = MainBox
+Instance.new("UICorner", Overlay).CornerRadius = UDim.new(0, 12)
+
+local TopBar = Instance.new("Frame")
+TopBar.Size = UDim2.new(1, 0, 0, 35)
+TopBar.BackgroundTransparency = 1
+TopBar.Parent = MainBox
+TopBar.ZIndex = 3
+
+local Title = Instance.new("TextLabel")
+Title.Size = UDim2.new(1, -20, 0, 30)
+Title.Position = UDim2.new(0, 10, 0, 5)
+Title.BackgroundTransparency = 1
+Title.Text = "ANTIAFK ALF7L DSTOR"
+Title.TextColor3 = Color3.fromRGB(0, 150, 255)
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 14
+Title.ZIndex = 4
+Title.Parent = TopBar
+
+local Stroke = Instance.new("UIStroke", MainBox)
+Stroke.Color = Color3.fromRGB(200, 20, 20)
+Stroke.Thickness = 1.5
+Stroke.Transparency = 0.2
+
+local TimerLbl = Instance.new("TextLabel")
+TimerLbl.Size = UDim2.new(1, -20, 0, 30)
+TimerLbl.Position = UDim2.new(0, 10, 0, 55)
+TimerLbl.BackgroundTransparency = 1
+TimerLbl.Text = "00:00:00"
+TimerLbl.TextColor3 = Color3.fromRGB(200, 30, 30)
+TimerLbl.Font = Enum.Font.GothamBold
+TimerLbl.TextSize = 20
+TimerLbl.ZIndex = 2
+TimerLbl.Parent = MainBox
+
+local isActivated = false
+
+KeyBtn.MouseButton1Click:Connect(function()
+    if KeyBox.Text == "Dstor-TOP1" then
+        KeyFrame:Destroy()
+        MainBox.Visible = true
+        
+        if not isActivated then
+            isActivated = true
+            
+            LocalPlayer.Idled:Connect(function()
+                VirtualUser:Button2Down(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
+                task.wait(1)
+                VirtualUser:Button2Up(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
+            end)
+
+            task.spawn(function()
+                local seconds = 0
+                while task.wait(1) do
+                    seconds = seconds + 1
+                    local hrs = math.floor(seconds / 3600)
+                    local mins = math.floor((seconds % 3600) / 60)
+                    local secs = seconds % 60
+                    TimerLbl.Text = string.format("%02d:%02d:%02d", hrs, mins, secs)
+                end
+            end)
+        end
+    else
+        KeyBox.Text = ""
+        KeyBox.PlaceholderText = "مفتاح خاطئ!"
+        KeyBox.PlaceholderColor3 = Color3.fromRGB(200, 30, 30)
+        local origPos = KeyFrame.Position
+        for i = 1, 4 do
+            KeyFrame.Position = origPos + UDim2.new(0, 0.01, 0, 0)
+            task.wait(0.05)
+            KeyFrame.Position = origPos - UDim2.new(0, 0.01, 0, 0)
+            task.wait(0.05)
+        end
+        KeyFrame.Position = origPos
+    end
+end)
+
+KeyBox.FocusLost:Connect(function(enterPressed)
+    if enterPressed then
+        KeyBtn:Fire("MouseButton1Click")
+    end
+end)
