@@ -13,7 +13,6 @@ ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = CoreGui
 if syn and syn.protect_gui then syn.protect_gui(ScreenGui) end
 
--- شاشة القفل (عريضة وبالنص)
 local KeyFrame = Instance.new("Frame")
 KeyFrame.Size = UDim2.new(0, 600, 0, 250)
 KeyFrame.Position = UDim2.new(0.5, -300, 0.5, -125)
@@ -96,10 +95,9 @@ KeyBtn.MouseLeave:Connect(function()
     KeyBtnStroke.Color = Color3.fromRGB(180, 20, 20)
 end)
 
--- الواجهة الرئيسية
 local MainBox = Instance.new("Frame")
-MainBox.Size = UDim2.new(0, 280, 0, 110)
-MainBox.Position = UDim2.new(0.5, -140, 0.5, -55)
+MainBox.Size = UDim2.new(0, 350, 0, 160)
+MainBox.Position = UDim2.new(0.5, -175, 0.5, -80)
 MainBox.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
 MainBox.BorderSizePixel = 0
 MainBox.Active = true
@@ -125,19 +123,19 @@ Overlay.Parent = MainBox
 Instance.new("UICorner", Overlay).CornerRadius = UDim.new(0, 12)
 
 local TopBar = Instance.new("Frame")
-TopBar.Size = UDim2.new(1, 0, 0, 35)
+TopBar.Size = UDim2.new(1, 0, 0, 45)
 TopBar.BackgroundTransparency = 1
 TopBar.Parent = MainBox
 TopBar.ZIndex = 3
 
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, -20, 0, 30)
-Title.Position = UDim2.new(0, 10, 0, 5)
+Title.Position = UDim2.new(0, 10, 0, 10)
 Title.BackgroundTransparency = 1
 Title.Text = "ANTIAFK ALF7L DSTOR"
 Title.TextColor3 = Color3.fromRGB(0, 150, 255)
 Title.Font = Enum.Font.GothamBold
-Title.TextSize = 14
+Title.TextSize = 18
 Title.ZIndex = 4
 Title.Parent = TopBar
 
@@ -147,13 +145,13 @@ Stroke.Thickness = 1.5
 Stroke.Transparency = 0.2
 
 local TimerLbl = Instance.new("TextLabel")
-TimerLbl.Size = UDim2.new(1, -20, 0, 30)
-TimerLbl.Position = UDim2.new(0, 10, 0, 55)
+TimerLbl.Size = UDim2.new(1, -20, 0, 60)
+TimerLbl.Position = UDim2.new(0, 10, 0, 60)
 TimerLbl.BackgroundTransparency = 1
 TimerLbl.Text = "00:00:00"
 TimerLbl.TextColor3 = Color3.fromRGB(200, 30, 30)
 TimerLbl.Font = Enum.Font.GothamBold
-TimerLbl.TextSize = 20
+TimerLbl.TextSize = 32
 TimerLbl.ZIndex = 2
 TimerLbl.Parent = MainBox
 
